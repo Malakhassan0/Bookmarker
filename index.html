@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmarker</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body class="bg-dark">
+    <div class="header">
+      <div class="container mt-3 d-flex justify-content-between">
+        <h1 class="text-secondary pb-3 border-bottom border-white">
+          Bookmarker
+        </h1>
+        <hr class="text-light" />
+        <!-- <div class="d-flex rounded-circle bg-danger text-white justify-content-center align-items-center cart">
+                    <span id="cart">0</span>
+                </div> -->
+      </div>
+    </div>
+    <!-- crud -->
+    <div class="bg-light container rounded w-75 mt-3">
+      <div class="text-center m-auto p-5">
+        <h3 class="border-bottom border-dark-subtle mb-5 pb-2">
+          Bookmark your favorite sites
+        </h3>
+
+        <div class="mt-5 p-4">
+          <label for="sName" class="fw-bolder">SITE NAME</label>
+          <input
+            type="text"
+            name="siteName"
+            placeholder="Bookmarker Name"
+            id="sName"
+            class="d-block w-75 mt-3 form-control m-auto"
+          />
+        </div>
+        <div class="mt-4 p-4">
+          <label for="sUrl" class="fw-bolder">SITE URL</label>
+          <input
+            type="text"
+            placeholder="Bookmarker URL"
+            name="siteURL"
+            id="sUrl"
+            class="d-block w-75 mt-3 form-control m-auto"
+          />
+        </div>
+        <button class="btn btn-outline-info my-3" id="btn">Add Books</button>
+        <button class="btn btn-outline-success my-3 d-none" id="update">
+          Edit
+        </button>
+      </div>
+    </div>
+    <div class="container mt-5">
+      <input
+        type="text"
+        class="w-75 m-auto form-control"
+        placeholder=" search"
+        id="search"
+      />
+    </div>
+
+    <!-- table -->
+    <div class="bg-light container rounded w-75 mt-3">
+      <table class="table mt-4">
+        <tbody id="links "></tbody>
+      </table>
+    </div>
+
+    <!-- footer -->
+    <footer class="text-center text-light mt-5">
+      <p class="border-top border-white">copyright &copy; Malak Hassan</p>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
